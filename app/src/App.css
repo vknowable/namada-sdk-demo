@@ -1,0 +1,140 @@
+.App {
+  text-align: center;
+  background-color: #e9edc9;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+.loading {
+  font-size: 2rem;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.info-item {
+  color: #000;
+}
+.section-head {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  margin-top: 35px;
+}
+.ruler {
+  min-height: 1px;
+  min-width: 100%;
+  background-color: grey;
+  margin-top: 10px;
+}
+.blocks-container {
+  display: flex;
+  min-width: 80%;
+  margin: auto;
+}
+.blocks-row {
+  min-width: 100%;
+  height: 100%;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  position: relative;
+  left: -62px;
+}
+.block-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #ccd5ae;
+  border: 2px solid #303e1f;
+  border-radius: 10px;
+  height: 150px;
+  width: 100px;
+  min-width: 100px;
+  margin: 5px;
+  overflow: hidden;
+  position: relative;
+  animation-name: slide-right;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+}
+.fade-o {
+  opacity: 1;
+  animation-name: fade-out;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+}
+.fade-i {
+  opacity: 0;
+  animation-name: fade-in;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+}
+@keyframes slide-right {
+  0%   {left:0px;}
+  100% {left:113px;}
+}
+@keyframes fade-in {
+  0%   {opacity: 0;}
+  100% {opacity: 1;}
+}
+@keyframes fade-out {
+  0%   {opacity: 1;}
+  100% {opacity: 0;}
+}
+.block-header {
+  background-color: #303e1f;
+  color: white;
+  padding: 10px;
+}
+.card-item {
+  color: #000;
+  margin-top: 5px;
+}
+.small-block {
+  width: 50px;
+  height: 50px;
+  background-color: grey;
+}
+.validator-column {
+  width: 100%;
+  margin: auto;
+  align-items: center;
+}
+.validator-card {
+  background-color: #ccd5ae;
+  border: 2px solid #303e1f;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 20px;
+
+}
+.validator-header {
+  background-color: #303e1f;
+  color: white;
+  padding: 20px;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  width: 100%
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.bold {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 4rem;
+  color: #b45d00;
+}
+ul {
+  list-style: none;
+}
